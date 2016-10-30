@@ -1,0 +1,9 @@
+<div class="clear">
+  <ul>
+    <li ng-repeat="item in fidc.found">
+       {{item.name}},{{item.short_name}},{{item.description}}
+      <button class="btn-xs btn-primary" ng-click="fidc.onRemove({index: $index});">Don't want this one!</button>
+    </li>
+  </ul>
+  <div ng-transclude></div>
+</div>
