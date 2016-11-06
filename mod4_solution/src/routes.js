@@ -27,8 +27,8 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       }]
     }
   })
-  .state('menuItemList', {
-    url: '/menu-item-list/{shortName}',
+  .state('items', {
+    url: '/items/{shortName}',
     templateUrl: 'src/templates/menuItem.template.html',
     controller: 'MenuItemListController as menuItem',
     resolve: {
